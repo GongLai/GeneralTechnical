@@ -5,13 +5,13 @@ from settings import MAX_SCORE
 class Proxy(object):
     # 代理IP的数据模型类
 
-    def __init__(self, ip, pory, pootocol=-1, nick_type=-1, speed=-1, area=None, score=MAX_SCORE, disable_domains=None):
+    def __init__(self, ip, pory, protocol=-1, nick_type=-1, speed=-1, area=None, score=MAX_SCORE, disable_domains=None):
         # ip：代理的IP地址
         self.ip = ip
         # pory：代理IP的端口号
         self.pory = pory
-        # pootocol：代理IP支持的协议类型，http为0，https为1，http/https都支持为2
-        self.pootocol = pootocol
+        # protocol：代理IP支持的协议类型，http为0，https为1，http/https都支持为2
+        self.protocol = protocol
         # nick_type：代理IP的匿名程度，高匿：0，匿名：1，透明：2
         self.nick_type = nick_type
         # speed：代理IP的响应速度，单位：s

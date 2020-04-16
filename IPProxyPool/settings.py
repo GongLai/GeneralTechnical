@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import logging
 
-
 # 代理IP默认最高分值：50
 MAX_SCORE = 50
 
@@ -11,3 +10,5 @@ LOG_FMT = '%(asctime)s %(filename)s [line:%(lineno)d] %(levelname)s: %(message)s
 LOG_DATEFMT = '%Y-%m-%d %H:%M:%S'  # 默认时间格式
 LOG_FILENAME = 'log.log'  # 默认日志文件名称
 
+# 检测代理IP的超时时间
+TEST_TIMEOUT = 10
