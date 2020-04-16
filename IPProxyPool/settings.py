@@ -12,3 +12,12 @@ LOG_FILENAME = 'log.log'  # 默认日志文件名称
 
 # 检测代理IP的超时时间
 TEST_TIMEOUT = 10
+
+
+# 配置MongoDB
+USER = 'King'
+PASSWORD = '1314156'
+SERVER = '127.0.0.1'
+PORT = '27017'
+MONGODB_URL = 'mongodb://{USER}:{PASSWORD}@{SERVER}:{PORT}'.format(USER=USER, PASSWORD=PASSWORD,
+                                                                   SERVER=SERVER, PORT=PORT)
